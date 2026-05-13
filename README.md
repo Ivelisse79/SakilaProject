@@ -27,6 +27,7 @@ SakilaProject es un sistema de gestión de renta de películas desarrollado en *
 
 ##  Estructura del Proyecto
 
+```
 SakilaProject/
 └── src/
     └── com/
@@ -66,11 +67,13 @@ SakilaProject/
             │   └── MenuReportes.java
             └── reports/
                 └── ReporteGeneral.java
+```
 
 -----------------------
 
 ### Diagrama de Jerarquía de Clases
 
+```
 «interface»
 IDataPost<T>
     |
@@ -87,11 +90,13 @@ DataContext
     ├── RentalDAO (final)
     ├── PaymentDAO (final)
     └── InventoryDAO (final)
+```
+-------
 
 
 ### Patrón MVC
 
-
+```
 Vista (views)          Controlador (controllers)      Modelo (models/data)
 ─────────────          ─────────────────────────      ───────────────────
 MenuPrincipal    →     ActorController          →     ActorDAO → MySQL
@@ -99,8 +104,8 @@ MenuActor        →     FilmController           →     FilmDAO  → MySQL
 MenuFilm         →     CustomerController       →     CustomerDAO → MySQL
 ...              →     ...                      →     ...
 
-
-
+```
+----
 
 ##  Requisitos Previos
 
@@ -137,6 +142,8 @@ SHOW DATABASES;
     sql
 SELECT * FROM sakila.actor LIMIT 5;
 
+-----
+
 
 ### Paso 2: Configurar el Proyecto en Eclipse
 
@@ -148,7 +155,8 @@ SELECT * FROM sakila.actor LIMIT 5;
 3. Pega la URL del repositorio:
    
    https://github.com/Ivelisse79/SakilaProject.git
-   
+
+   ----
 
 ### Paso 3: Agregar el MySQL Connector
 
@@ -159,6 +167,8 @@ SELECT * FROM sakila.actor LIMIT 5;
    
 3. Selecciona el archivo: mysql-connector-j-9.7.0.jar
 
+   ---
+
 ### Paso 4: Configurar la Conexión
 
 Abre el archivo: "src/com/sakila/data/Conexion.java" y ajusta:
@@ -168,6 +178,7 @@ private static final String URL = "jdbc:mysql://localhost:3306/sakila";
 private static final String USUARIO = "root";
 private static final String CONTRASENA = "tuContraseña"; // ← cambia esto
 ```
+---
 
 ### Paso 5: Ejecutar el Sistema
 
@@ -198,7 +209,7 @@ Seleccione una opción:
 ### Operaciones CRUD disponibles
 
 Cada módulo permite:
-
+```
 | Operación | Descripción |
 |-----------|-------------|
 | **Listar** | Muestra todos los registros |
@@ -206,6 +217,8 @@ Cada módulo permite:
 | **Agregar** | Crea un nuevo registro |
 | **Actualizar** | Modifica un registro existente |
 | **Eliminar** | Elimina un registro |
+```
+----
 
 ### Reportes y Estadísticas
 
