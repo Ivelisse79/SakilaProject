@@ -187,7 +187,7 @@ private static final String CONTRASENA = "tuContraseña"; // ← cambia esto
 
 -----------
 
-## 💻 Uso del Sistema
+##  Uso del Sistema
 
 Al ejecutar el programa verás el menú principal:
 
@@ -209,7 +209,7 @@ Seleccione una opción:
 ### Operaciones CRUD disponibles
 
 Cada módulo permite:
-```
+
 | Operación | Descripción |
 |-----------|-------------|
 | **Listar** | Muestra todos los registros |
@@ -217,7 +217,7 @@ Cada módulo permite:
 | **Agregar** | Crea un nuevo registro |
 | **Actualizar** | Modifica un registro existente |
 | **Eliminar** | Elimina un registro |
-```
+
 ----
 
 ### Reportes y Estadísticas
@@ -233,7 +233,7 @@ Cada módulo permite:
 
 ---
 
-## 🗄️ Modelos de Datos
+##  Modelos de Datos
 
 ### Actor
 | Campo | Tipo | Descripción |
@@ -317,4 +317,4 @@ Los archivos se guardan en el directorio raíz del proyecto.
 -  Interface `IDataPost` como estándar CRUD
 -  Clase abstracta `DataContext` con métodos `final`
 
--
+
